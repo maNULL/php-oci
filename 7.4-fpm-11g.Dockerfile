@@ -26,7 +26,7 @@ RUN unzip /opt/oracle/instantclient-basiclite-linux.x64-11.2.0.4.0.zip -d /opt/o
     && apk add --no-cache libnsl libaio-dev icu-dev \
     && ln -s /usr/lib/libnsl.so.2 /usr/lib/libnsl.so.1 \
     \
-    && pecl install xdebug-2.9.2 \
+    && pecl install xdebug-2.9.0 \
     && pecl install apcu-5.1.18 \
     \
     && docker-php-ext-configure oci8 --with-oci8=instantclient,/opt/oracle/instantclient_11_2/ \
