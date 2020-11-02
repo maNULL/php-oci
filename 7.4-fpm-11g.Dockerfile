@@ -1,6 +1,6 @@
 FROM composer:latest AS composer
 
-FROM php:7.4.1-fpm-alpine3.11
+FROM php:7.4.12-fpm-alpine3.12
 
 LABEL maintainer="John Komarov <komarov.j@gmail.com>"
 
